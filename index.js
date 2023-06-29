@@ -10,12 +10,10 @@ const randomImage = Math.floor(Math.random() * images.length);
 
 const img = document.createElement('img');
 img.classList.add('img')
-img.src = `/images/${images[randomImage]}`;
-
+img.src = `images/${images[randomImage]}`;
 img.style.position = 'fixed';
 img.style.top = '50%';
 img.style.left = '50%';
 img.style.transform = 'translate(-50%, -50%)';
-
 
 document.body.querySelector('.div').appendChild(img)
